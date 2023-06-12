@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    background-color: white;
 }
 
 .header__left {
@@ -34,6 +35,10 @@
     outline: none;
     border: none;
     background: none;
+}
+
+.headerOption__icon {
+    object-fit: contain;
 }
 
 .header__right {
