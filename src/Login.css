@@ -1,5 +1,5 @@
 * {
-    background-color: white !important;
+    background-color: white;
 }
 
 .login {
@@ -65,4 +65,19 @@
 .login > form > button:hover {
     background-color: #0759ac !important;
 
+}
+
+.login > p {
+    margin-top: 10px;
+}
+
+.login__register {
+    color: #0a6ed3;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.login__register:hover {
+    color: #0759ac;
 }
