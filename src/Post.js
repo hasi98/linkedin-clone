@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useReducer, forwardRef } from 'react'
 import './Post.css'
 import { Avatar } from '@mui/material'
 import InputOption from './InputOption'
@@ -9,12 +9,12 @@ import SyncOutlinedIcon from '@mui/icons-material/SyncOutlined';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 
-function Post({ name, description, message, photoUrl}) {
+const Post = forwardRef(({ name, description, message, photoUrl}, ref) => {
 
   
 
   return (
-    <div className='post'>
+    <div ref={ref} className='post'>
     <div className="post__header">
       <Avatar src={photoUrl}>{name[0]}</Avatar>
       <div className="post__info">
@@ -47,6 +47,6 @@ function Post({ name, description, message, photoUrl}) {
       </div>
     </div>
   )
-}
+})
 
 export default Post

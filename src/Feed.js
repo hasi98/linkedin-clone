@@ -13,6 +13,7 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
+import FlipMove from 'react-flip-move';
 
 function Feed() {
 
@@ -63,6 +64,7 @@ useEffect(() => {
             <InputOption  Icon={ArticleIcon} title='Write article' color='#e16745'/>
         </div>
       </div>
+      <FlipMove>
         {posts.map(({id, data: {name, description, message, photoUrl}}) => (
             <Post 
               key={id}
@@ -71,7 +73,8 @@ useEffect(() => {
               message={message}
               photoUrl={photoUrl}
             />
-        ))}        
+        ))}  
+        </FlipMove>    
     </div>
 
   )

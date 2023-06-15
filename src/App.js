@@ -9,6 +9,7 @@ import Login from './Login';
 import { auth } from './firebase';
 import { useEffect } from 'react';
 import { login } from "./features/userSlice"
+import Widgets from './Widgets';
 
 function App() {
 
@@ -48,7 +49,7 @@ function App() {
       <div className="app__body">
         <Sidebar />
         <Feed />
-        {/* Widgets */}
+        <Widgets />
         </div>
         </div>
         )}

@@ -1,5 +1,5 @@
 .feed {
-    background-color: #dddada;
+    background-color: #dddada !important;
     flex: 3;
     width: 500px;
     margin: 0 20px;
